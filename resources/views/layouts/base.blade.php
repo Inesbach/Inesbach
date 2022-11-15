@@ -5,6 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Accueil</title>	
+	
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400italic,700,700italic,900,900italic&amp;subset=latin,latin-ext" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open%20Sans:300,400,400italic,600,600italic,700,700italic&amp;subset=latin,latin-ext" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="{{ asset ('assets/css/animate.css') }}">
@@ -14,6 +15,7 @@
 	<link rel="stylesheet" type="text/css" href="{{ asset ('assets/css/chosen.min.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset ('assets/css/style.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset ('assets/css/color-01.css') }}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.3/nouislider.min.css" integrity="sha512-KRrxEp/6rgIme11XXeYvYRYY/x6XPGwk0RsIC6PyMRc072vj2tcjBzFmn939xzjeDhj0aDO7TDMd7Rbz3OEuBQ==" crossorigin="anonymous" />
     @livewireStyles
 </head>
     
@@ -52,6 +54,15 @@
 												<ul class="submenu curency" >
 													<li class="menu-item" >
 														<a title="Dashboard" href="{{route('admin.dashboard')}}">Dashboard</a>
+													</li>
+													<li class="menu-item" >
+														<a title="Categories" href="{{route('admin.categories')}}">Categories</a>
+													</li>
+													<li class="menu-item" >
+														<a title="Produits" href="{{route('admin.products')}}">Produits</a>
+													</li>
+													<li class="menu-item" >
+														<a title="Utilisateurs" href="{{route('admin.users')}}">Utilisateurs</a>
 													</li>
 													<li class="menu-item" >
 														<a href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Déconnexion</a>
@@ -94,35 +105,11 @@
 					<div class="mid-section main-info-area">
 
 						<div class="wrap-logo-top left-section">
-							<a href="/" style="font-size: 20px;font-weight: bold ;text-decoration:none;color: black">MyHomeDeco</a>
+						<img src="{{ asset ('assets/images/produits/image.png')}}" alt="logo">
+						
 						</div>
 
-						<div class="wrap-search center-section">
-							<div class="wrap-search-form">
-								<form action="#" id="form-search-top" name="form-search-top">
-									<input type="text" name="search" value="" placeholder="Rechercher">
-									<button form="form-search-top" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
-									<div class="wrap-list-cate">
-										<input type="hidden" name="product-cate" value="0" id="product-cate">
-										<a href="#" class="link-control">Categories</a>
-										<ul class="list-cate">
-											<li class="level-1">-MEUBLES SALON</li>
-											<li class="level-2">Meubles TV</li>
-											<li class="level-2">Canapé & Fauteuil</li>
-											<li class="level-2">Meubles d'entrée</li>
-											<li class="level-1">-MEUBLES CHAMBRE</li>
-											<li class="level-2">Chambre Couple</li>
-											<li class="level-2">Chambre Enfant</li>
-											<li class="level-2">Chambre Bébé</li>
-											<li class="level-1">-MEUBLES CUISINE </li>
-											<li class="level-2">Equipements cuisine</li>
-											<li class="level-1">-MEUBLES SALE DE BAIN</li>
-											<li class="level-2">Meubles Sale de bain</li>
-										</ul>
-									</div>
-								</form>
-							</div>
-						</div>
+						@livewire('header-search-component')
 
 						<div class="wrap-icon right-section">
 							<div class="wrap-icon-section wishlist">
@@ -134,10 +121,12 @@
 								</a>
 							</div>
 							<div class="wrap-icon-section minicart">
-								<a href="#" class="link-direction">
+								<a href="/cart" class="link-direction">
 									<i class="fa fa-shopping-basket" aria-hidden="true"></i>
 									<div class="left-info">
-										<span class="index">4 produits</span>
+									@if(Cart::count() > 0)
+										<span class="index">{{Cart::count()}} produit(s)</span>
+									@endif
 										<span class="title">Panier</span>
 									</div>
 								</a>
@@ -162,10 +151,10 @@
 									<a href="/" class="link-term mercado-item-title"><i class="fa fa-home" aria-hidden="true"></i></a>
 								</li>
 								<li class="menu-item">
-									<a href="presentation.html" class="link-term mercado-item-title">Présentation</a>
+									<a href="/presentation" class="link-term mercado-item-title">Présentation</a>
 								</li>
 								<li class="menu-item">
-									<a href="/shop" class="link-term mercado-item-title">Produits</a>
+									<a href="/shop" class="link-term mercado-item-title">Categories</a>
 								</li>
 								<li class="menu-item">
 									<a href="/cart" class="link-term mercado-item-title">Panier</a>
@@ -174,7 +163,7 @@
 									<a href="/checkout" class="link-term mercado-item-title">Checkout</a>
 								</li>
 								<li class="menu-item">
-									<a href="contact.html" class="link-term mercado-item-title">Contact</a>
+									<a href="#" class="link-term mercado-item-title">Contact</a>
 								</li>																	
 							</ul>
 						</div>
@@ -306,10 +295,10 @@
 									<div class="item-content">
 										<div class="wrap-vertical-nav">
 											<ul>
-												<li class="menu-item"><a href="presentation.html" class="link-term">Qui sommes nous?</a></li>
-												<li class="menu-item"><a href="compte.html" class="link-term">Inscrivez-vous!</a></li>
-												<li class="menu-item"><a href="connexion.html" class="link-term">Espace client </a></li>
-												<li class="menu-item"><a href="contact.html" class="link-term">Contactez-nous!</a></li>
+												<li class="menu-item"><a href="/presentation" class="link-term">Qui sommes nous?</a></li>
+												<li class="menu-item"><a href="{{ route('register') }}" class="link-term">Inscrivez-vous!</a></li>
+												<li class="menu-item"><a href="{{ route('login') }}" class="link-term">Espace client </a></li>
+												<li class="menu-item"><a href="#" class="link-term">Contactez-nous!</a></li>
 												<li class="menu-item"><a href="/shop" class="link-term">Nos Produits</a></li>
                                               
 											</ul>
@@ -322,10 +311,10 @@
 										<div class="wrap-vertical-nav">
 											<ul>
 												<li class="menu-item"><a href="/" class="link-term">Accueil</a></li>
-												<li class="menu-item"><a href="about-us.html" class="link-term">Présentation</a></li>
+												<li class="menu-item"><a href="/presentation" class="link-term">Présentation</a></li>
 												<li class="menu-item"><a href="/shop" class="link-term">Produits</a></li>
 												<li class="menu-item"><a href="/cart" class="link-term">Panier</a></li>
-                                                <li class="menu-item"><a href="contact-us.html" class="link-term">Contact</a></li>
+                                                <li class="menu-item"><a href="#" class="link-term">Contact</a></li>
 											</ul>
 										</div>
 									</div>
@@ -354,15 +343,20 @@
 		</div>
 	</footer>
 	<!--------------------------/// FOOTER ------------------------------------->
+	
 	<script src="{{ asset ('assets/js/jquery-1.12.4.minb8ff.js?ver=1.12.4') }}  "></script>
 	<script src="{{ asset ('assets/js/jquery-ui-1.12.4.minb8ff.js?ver=1.12.4') }} "></script>
 	<script src="{{ asset ('assets/js/bootstrap.min.js') }} "></script>
 	<script src="{{ asset ('assets/js/jquery.flexslider.js') }} "></script>
-	<script src="{{ asset ('assets/js/chosen.jquery.min.js') }} "></script>
+	<!--<script src="{{ asset ('assets/js/chosen.jquery.min.js') }} "></script>-->
 	<script src="{{ asset ('assets/js/owl.carousel.min.js') }} "></script>
 	<script src="{{ asset ('assets/js/jquery.countdown.min.js') }} "></script>
 	<script src="{{ asset ('assets/js/jquery.sticky.js') }} "></script>
 	<script src="{{ asset ('assets/js/functions.js') }} "></script>
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"  rel="stylesheet"/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.3/nouislider.min.js" integrity="sha512-EnXkkBUGl2gBm/EIZEgwWpQNavsnBbeMtjklwAa7jLj60mJk932aqzXFmdPKCG6ge/i8iOCK0Uwl1Qp+S0zowg==" crossorigin="anonymous" ></script>
+
     @livewireScripts
+	@stack('scripts')
 </body>
 </html>

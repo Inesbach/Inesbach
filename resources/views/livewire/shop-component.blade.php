@@ -17,10 +17,8 @@
                 <div class="wrap-right">
 
                     <div class="sort-item orderby ">
-                        <select name="orderby" class="use-chosen" >
-                            <option value="menu_order" selected="selected">Triage par défaut</option>
-                            <option value="popularity">Trier par popularité</option>
-                            <option value="rating">Trier par note moyenne</option>
+                        <select name="orderby" class="use-chosen" wire:model="sorting" >
+                            <option value="default" selected="selected">Triage par défaut</option>
                             <option value="date">Trier par nouveauté</option>
                             <option value="price">Trier par prix : faible à élevé</option>
                             <option value="price-desc">Trier par prix: élevé à faible</option>
@@ -28,7 +26,7 @@
                     </div>
 
                     <div class="sort-item product-per-page">
-                        <select name="post-per-page" class="use-chosen" >
+                        <select name="post-per-page" class="use-chosen" wire:model="pagesize" >
                             <option value="12" selected="selected">12 par page</option>
                             <option value="16">16 par page</option>
                             <option value="18">18 par page</option>
@@ -47,196 +45,36 @@
             <div class="row">
 
                 <ul class="product-list grid-products equal-container">
-
+                    @foreach ($products as $product)
                     <li class="col-lg-4 col-md-6 col-sm-6 col-xs-6 ">
                         <div class="product product-style-3 equal-elem "  >
 
                             <div class="product-thumnail"  >
-                                <a href="#" title="chambre">
-                                    <figure ><img src=" {{ asset ('assets/images/produits/Chambre/chambre1.png ')}}" alt="chambre"></figure>
+                                <a href="{{route('product.details',['slug'=>$product->slug])}}" title="{{$product->name}}">
+                                    <figure ><img src=" {{ asset ('assets/images/produits/')}}/{{$product->image}}" alt="{{$product->name}}"></figure>
                                 </a>
                             </div>
                             <div class="product-info" >
-                                <a href="#" class="product-name"><span>MEUBLE TV NOYER - 140 * 32 * 45 CM - NOYER, BLANC - MDF STRATIFIÉ</span></a>
-                                <div class="wrap-price"><span class="product-price">1200 TND</span></div>
-                                <a href="#" class="btn add-to-cart">Acheter</a>
+                                <a href="{{route('product.details',['slug'=>$product->slug])}}" class="product-name"><span>{{$product->name}}</span></a>
+                                <div class="wrap-price"><span class="product-price">TND {{$product->regular_price}}</span></div>
+                                <a href="#" class="btn add-to-cart" wire:click.prevent="store({{$product->id}},'{{$product->name}}',{{$product->regular_price}})">ACHETER</a>
                             </div>
                         </div>
                     </li>
-                    <li class="col-lg-4 col-md-6 col-sm-6 col-xs-6 ">
-                        <div class="product product-style-3 equal-elem " >
-                        
-                            
-                            <div class="product-thumnail" >
-                                <a href="#" title="cuisine">
-                                    <figure ><img src="{{ asset ('assets/images/produits/Cuisine/cuisine1.png')}}" alt="cuisine"></figure>
-                                </a>
-                            </div>
-                            <div class="product-info" >
-                                <a href="#" class="product-name"><span>MEUBLE TV NOYER - 140 * 32 * 45 CM - NOYER, BLANC - MDF STRATIFIÉ</span></a>
-                                <div class="wrap-price"><span class="product-price">1200 TND</span></div>
-                                <a href="#" class="btn add-to-cart">Acheter</a>
-                            </div>
-                        </div>
-                    </li>
-                    
-                    
-                    
-                    <li class="col-lg-4 col-md-6 col-sm-6 col-xs-6 ">
-                        <div class="product product-style-3 equal-elem " >
-                            <div class="product-thumnail">
-                                <a href="detail.html" title="salleDeBain">
-                                    <figure>
-                                        <img src="{{ asset ('assets/images/produits/salleDeBain/1.jpg')}}" alt="salleDeBain">
-                                    </figure>
-                                </a>
-                            </div>
-                            <div class="product-info" style="margin-bottom: 5px">
-                                <a href="#" class="product-name"><span>ARMOIRE GO 1MIROIR 1PORTE CHÊNE SONOMA (30-15H-H0-1)</span></a>
-                                <div class="wrap-price"><span class="product-price">300 TND</span></div>
-                                <a href="#" class="btn add-to-cart">Acheter </a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="col-lg-4 col-md-6 col-sm-6 col-xs-6 ">
-                        <div class="product product-style-3 equal-elem ">
-                            <div class="product-thumnail">
-                                <a href="detail.html" title="salon">
-                                    <figure><img src="{{ asset ('assets/images/produits/Salon/salon1.png')}}" alt="salon"></figure>
-                                </a>
-                            </div>
-                            <div class="product-info">
-                                <a href="#" class="product-name"><span> CANAPE LISERA 3PLACES ROSE NOBILE 80</span></a>
-                                <div class="wrap-price"><span class="product-price">850 TND</span></div>
-                                <a href="#" class="btn add-to-cart">Acheter </a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="col-lg-4 col-md-6 col-sm-6 col-xs-6 ">
-                        <div class="product product-style-3 equal-elem ">
-                            <div class="product-thumnail">
-                                <a href="detail.html" title="Chambre">
-                                    <figure><img src="{{ asset ('assets/images/produits/Chambre/chambre5.png')}}" alt="chambre"></figure>
-                                </a>
-                            </div>
-                            <div class="product-info">
-                                <a href="#" class="product-name"><span> CHAMBRE À COUCHER PHOENIX - BOIS MDF STRATIFIÉ - CHÊNE, DORÉ</span></a>
-                                <div class="wrap-price"><span class="product-price">1500 TND</span></div>
-                                <a href="#" class="btn add-to-cart">Acheter </a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="col-lg-4 col-md-6 col-sm-6 col-xs-6 ">
-                        <div class="product product-style-3 equal-elem ">
-                            <div class="product-thumnail">
-                                <a href="detail.html" title="cuisine">
-                                    <figure><img src="{{ asset ('assets/images/produits/Cuisine/cuisine3.png')}}" alt="cuisine"></figure>
-                                </a>
-                            </div>
-                            <div class="product-info">
-                                <a href="#" class="product-name"><span>BUREAU BEIGE </span></a>
-                                <div class="wrap-price"><span class="product-price">250 TND</span></div>
-                                <a href="#" class="btn add-to-cart">Acheter </a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="col-lg-4 col-md-6 col-sm-6 col-xs-6 ">
-                        <div class="product product-style-3 equal-elem ">
-                            <div class="product-thumnail">
-                                <a href="detail.html" title=" salleDeBain">
-                                    <figure><img src="{{ asset ('assets/images/produits/salleDeBain/salleDeBain4.png')}}" alt="salleDeBain"></figure>
-                                </a>
-                            </div>
-                            <div class="product-info">
-                                <a href="#" class="product-name"><span> CHAMBRE BEBE - Plume</span></a>
-                                <div class="wrap-price"><span class="product-price">850 TND </span></div>
-                                <a href="#" class="btn add-to-cart">Acheter </a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="col-lg-4 col-md-6 col-sm-6 col-xs-6 ">
-                        <div class="product product-style-3 equal-elem ">
-                            <div class="product-thumnail">
-                                <a href="detail.html" title="chambre">
-                                    <figure><img src="{{ asset ('assets/images/produits/Chambre/chambre3.png')}}" alt="chambre"></figure>
-                                </a>
-                            </div>
-                            <div class="product-info">
-                                <a href="#" class="product-name"><span>COMMODE ENFANT  - WILLOW </span></a>
-                                <div class="wrap-price"><span class="product-price">150 TND</span></div>
-                                <a href="#" class="btn add-to-cart">Acheter </a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="col-lg-4 col-md-6 col-sm-6 col-xs-6 ">
-                        <div class="product product-style-3 equal-elem ">
-                            <div class="product-thumnail">
-                                <a href="detail.html" title="salon">
-                                    <figure><img src="{{ asset ('assets/images/produits/Salon/salon3.png')}}" alt="salon"></figure>
-                                </a>
-                            </div>
-                            <div class="product-info">
-                                <a href="#" class="product-name"><span> SALON MODERNE NORDIQUE DESIGN</span></a>
-                                <div class="wrap-price"><span class="product-price">1250 TND </span></div>
-                                <a href="#" class="btn add-to-cart">Acheter </a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="col-lg-4 col-md-6 col-sm-6 col-xs-6 ">
-                        <div class="product product-style-3 equal-elem ">
-                            <div class="product-thumnail">
-                                <a href="detail.html" title="cuisine ">
-                                    <figure><img src="{{ asset ('assets/images/produits/Cuisine/cuisine4.png')}}" alt="cuisine"></figure>
-                                </a>
-                            </div>
-                            <div class="product-info">
-                                <a href="#" class="product-name"><span>Radiant-360 R6 Wireless Omnidirectional Speaker [White]</span></a>
-                                <div class="wrap-price"><span class="product-price">250TND</span></div>
-                                <a href="#" class="btn add-to-cart">Acheter </a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="col-lg-4 col-md-6 col-sm-6 col-xs-6 ">
-                        <div class="product product-style-3 equal-elem ">
-                            <div class="product-thumnail">
-                                <a href="detail.html" title="chambre">
-                                    <figure><img src="{{ asset ('assets/images/produits/Chambre/chambre6.png')}}" alt="chambre"></figure>
-                                </a>
-                            </div>
-                            <div class="product-info">
-                                <a href="#" class="product-name"><span> BIBLIOTHÉQUE MURALE - 40*60/80*25 CM - BOIS MDF STRATIFIÉ - MARRON, BLEU</span></a>
-                                <div class="wrap-price"><span class="product-price">520TND</span></div>
-                                <a href="#" class="btn add-to-cart">Acheter </a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="col-lg-4 col-md-6 col-sm-6 col-xs-6 ">
-                        <div class="product product-style-3 equal-elem ">
-                            <div class="product-thumnail">
-                                <a href="detail.html" title="salon">
-                                    <figure><img src="{{ asset ('assets/images/produits/Salon/salon4.png')}}" alt="salon"></figure>
-                                </a>
-                            </div>
-                            <div class="product-info">
-                                <a href="#" class="product-name"><span>SALON DE JARDIN DESIGN </span></a>
-                                <div class="wrap-price"><span class="product-price">950 TND </span></div>
-                                <a href="#" class="btn add-to-cart">Ajouter Panier</a>
-                            </div>
-                        </div>
-                    </li>
-
-                </ul>
+                    @endforeach
+                    </ul>
 
             </div>
 
             <div class="wrap-pagination-info">
-                <ul class="page-numbers">
+                {{$products->links()}}
+            <!--   <ul class="page-numbers">
                     <li><span class="page-number-item current" >1</span></li>
                     <li><a class="page-number-item" href="#" >2</a></li>
                     <li><a class="page-number-item" href="#" >3</a></li>
                     <li><a class="page-number-item next-link" href="#" >Suivants</a></li>
-                </ul>
-                <p class="result-count">Affichage 1-8 de 12 résultats</p>
+                </ul> 
+                <p class="result-count">Affichage 1-8 de 12 résultats</p> -->
             </div>
         </div><!--end main products area-->
 
@@ -245,35 +83,11 @@
                 <h2 class="widget-title">Categories</h2>
                 <div class="widget-content">
                     <ul class="list-category">
-                    
+                    @foreach($categories as $category)
                         <li class="category-item has-child-cate">
-                            <a href="#" class="cate-link">MEUBLES SALON</a>
-                            <span class="toggle-control">+</span>
-                            <ul class="sub-cate">
-                                <li class="category-item"><a href="#" class="cate-link">Meubles TV</a></li>
-                                <li class="category-item"><a href="#" class="cate-link">Canapé et Fauteuil</a></li>
-                                <li class="category-item"><a href="#" class="cate-link">Meubles d'entrée</a></li>
-                            </ul>
+                            <a href="{{route('product.category',['category_slug'=>$category->slug])}}" class="cate-link">{{$category->name}}</a>
                         </li>
-                        <li class="category-item has-child-cate">
-                            <a href="#" class="cate-link">MEUBLES CHAMBRE</a>
-                            <span class="toggle-control">+</span>
-                            <ul class="sub-cate">
-                                <li class="category-item"><a href="#" class="cate-link">Chambre Couple</a></li>
-                                <li class="category-item"><a href="#" class="cate-link">Chambre Enfant</a></li>
-                                <li class="category-item"><a href="#" class="cate-link">Chambre Bébé</a></li>
-                            </ul>
-                        </li>
-                    
-                        <li class="category-item has-child-cate">
-                            <a href="#" class="cate-link">MEUBLES CUISINE & SALE DE BAIN</a>
-                            <span class="toggle-control">+</span>
-                            <ul class="sub-cate">
-                                <li class="category-item"><a href="#" class="cate-link">Equipements cuisine</a></li>
-                                <li class="category-item"><a href="#" class="cate-link">Meubles Sale de bain</a></li>
-                                
-                            </ul>
-                        </li>
+                    @endforeach
                     </ul>
                 </div>
             </div><!-- fin_Categories-->
@@ -281,16 +95,12 @@
         
 
             <div class="widget mercado-widget filter-widget price-filter">
-                <h2 class="widget-title">Prix</h2>
-                <div class="widget-content">
-                    <div id="slider-range"></div>
-                    <p>
-                        <label for="amount">Prix:</label>
-                        <input type="text" id="amount" readonly>
-                        <button class="filter-submit">Flitrer</button>
-                    </p>
-                </div>
-            </div><!-- Prix-->
+                <h2 class="widget-title">Prix <span class="text-info">{{$min_price}}TND - {{$max_price}}TND</span></h2>
+                <div class="widget-content" style="padding:10px 5px 40px 5px; ">
+                <div id="slider" wire:ignore></div>
+                </div> 
+             </div>
+            <!-- Prix-->
 
             
             
@@ -365,3 +175,33 @@
 </div><!--end container-->
 
 </main>
+
+@push('scripts')
+    <script>
+
+    var slider = document.getElementById('slider');
+    noUiSlider.create
+    noUiSlider.create(slider,
+            {
+            start : [1,9999],
+            connect:true,
+            range: {
+            'min' : 1,
+            'max' : 9999
+            },
+        
+            pips:{
+            mode:'steps',
+            stepped:true,
+            density:4
+            }
+    });
+
+    slider.noUiSlider.on('update',function(value)
+        {
+        @this.set('min_price', value[0]);
+        @this.set('max_price', value[1]);
+        })
+    </script>
+
+@endpush

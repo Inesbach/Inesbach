@@ -1,5 +1,5 @@
 <x-guest-layout>
-main id="main" class="main-site left-sidebar">
+<main id="main" class="main-site left-sidebar">
 
 <div class="container">
 

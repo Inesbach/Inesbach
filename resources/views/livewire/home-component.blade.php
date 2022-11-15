@@ -7,7 +7,7 @@
 					<div class="item-slide">
 						<img src="{{ asset ('assets/images/slides/slide1.png') }}" alt="meuble" class="img-slide">
 						<div class="slide-info slide-1">
-							<h2 class="f-title"> Chambre  <b>Adulte</b></h2>
+							<h2 class="f-title"><b>Salon</b></h2>
 							<span class="subtitle">Achetez tous vos meubles en ligne</span>
 							<p class="sale-info">A partir de <span class="price">850 TND </span></p>
 							<a href="#" class="btn-link">Achetez maintenant </a>
@@ -19,17 +19,15 @@
 							<h2 class="f-title">Remise 25% </h2>
 							<span class="f-subtitle"> sur vos achats en ligne </span>
 							<p class="discount-code">Code de coupon : #FA6868</p>
-							<h4 style="color: #000080">Livraison offerte sur toute la tunisie </h4>
-						
+													
 						</div>
 					</div>
 					<div class="item-slide">
 						<img src="{{ asset ('assets/images/slides/slide3.png') }}" alt="meuble" class="img-slide">
 						<div class="slide-info slide-3">
-							<h2 class="f-title">Great Range of <b>Exclusive Furniture Packages</b></h2>
-							<span class="f-subtitle">Exclusive Furniture Packages to Suit every need.</span>
-							<p class="sale-info">Stating at: <b class="price">$225.00</b></p>
-							<a href="#" class="btn-link">Shop Now</a>
+					<h2 class="f-title">Nouvelle<b> meubles Cuisine</b></h2>
+					<p class="sale-info">À partir de: <b class="price"> 600 DT</b></p>
+					<a href="#" class="btn-link">Acheter maintenant</a>
 						</div>
 					</div>
 				</div>
@@ -62,7 +60,7 @@
             <!-- *********----Produits Categories -----************-->
 			
 			<div class="wrap-show-advance-info-box style-1">
-				<h3 class="title-box">Categories</h3>
+				<h3 class="title-box">Espace Promotions </h3>
 				<div class="wrap-top-banner">
 					<a href="#" class="link-banner banner-effect-2">
 						<figure><img src="{{ asset ('assets/images/banner/bitmap.png') }}" width="1170" height="240" alt="categories_meubles"></figure>
@@ -92,12 +90,14 @@
 												<span class="flash-item new-label">Nouveau</span>
 											</div>
 											<div class="wrap-btn">
+										
 												<a href="#" class="function-link">Vue rapide </a>
+											
 											</div>
 										</div>
 										<div class="product-info">
-											<a href="#" class="product-name"><span>CHAMBRE À COUCHER ADULTE SCANDINAVE - BOIS MDF - BLANC ET CHÊNE Référence B502</span></a>
-											<div class="wrap-price"><span class="product-price">987 TND</span></div>
+											<a href="#" class="product-name"><span>CHAMBRE À COUCHER SCADINAVE</span></a>
+											<div class="wrap-price"><span class="product-price"> 6500 TND</span></div>
 										</div>
 									</div>
 
@@ -114,8 +114,8 @@
 											</div>
 										</div>
 										<div class="product-info">
-											<a href="#" class="product-name"><span>CHAMBRE À COUCHER SANDRA - BOIS MDF STRATIFIÉ - CHÊNE ET BEIGE CLAIR Référence B498 </span></a>
-											<div class="wrap-price"><ins><p class="product-price">3 999 TND </p></ins><del><p class="product-price">4 999 TND</p></del></div>
+											<a href="#" class="product-name"><span> CHAMBRE À COUCHER ARCHIPEL </span></a>
+											<div class="wrap-price"><ins><p class="product-price"> 1000 TND  </p></ins> <del><p class="product-price"> 1200 TND</p></del></div>
 										</div>
 									</div>
 
@@ -133,8 +133,8 @@
 											</div>
 										</div>
 										<div class="product-info">
-											<a href="#" class="product-name"><span>CHAMBRE À COUCHER POUR BÉBÉ ARCHIPEL - BOIS MDF STRATIFIÉ - CHÊNE ET BLANC Référence B5901</span></a>
-											<div class="wrap-price"><span class="product-price">1400 TND </span></div>
+											<a href="#" class="product-name"><span>CHAMBRE À COUCHER ROYALE</span></a>
+											<div class="wrap-price"><ins><p class="product-price">3999 TND  </p></ins> <del><p class="product-price"> 4 999 TND</p></del></div>
 										</div>
 									</div>
 
@@ -152,8 +152,8 @@
 										</div>
 									</div>
 									<div class="product-info">
-										<a href="#" class="product-name"><span> CHAMBRE À COUCHER POUR ENFANT EMNA - BOIS MDF STRATIFIÉ - BLANC, ROSE Référence B204 </span></a>
-										<div class="wrap-price"><ins><p class="product-price">2700 TND </p></ins> <del><p class="product-price"> 3000 TND</p></del></div>
+										<a href="#" class="product-name"><span> CHAMBRE À COUCHER  BÉBÉ</span></a>
+										<div class="wrap-price"><span class="product-price"> 850 TND</span></div>
 									</div>
 								</div>
 
@@ -170,8 +170,8 @@
 											</div>
 										</div>
 										<div class="product-info">
-											<a href="#" class="product-name"><span>LIT CAPITONNÉ POUR ADULTE - GRIS Référence B7303</span></a>
-											<div class="wrap-price"><span class="product-price">999 TND</span></div>
+											<a href="#" class="product-name"><span>CHAMBRE À COUCHER SANDRA</span></a>
+											<div class="wrap-price"><span class="product-price"> 1350 TND</span></div>
 										</div>
 									</div>
 									<div class="product product-style-2 equal-elem ">
@@ -180,15 +180,15 @@
 												<figure><img src="{{ asset ('assets/images/categories-index/Chambre/chambre6.png') }}" width="800" height="800" alt="chambre"></figure>
 											</a>
 											<div class="group-flash">
-												<span class="flash-item bestseller-label">Bestseller</span>
+											<span class="flash-item new-label">Nouveau</span>
 											</div>
 											<div class="wrap-btn">
-												<a href="#" class="function-link">quick view</a>
+												<a href="#" class="function-link">Vue Rapide</a>
 											</div>
 										</div>
 										<div class="product-info">
-											<a href="#" class="product-name"><span>Radiant-360 R6 Wireless Omnidirectional Speaker [White]</span></a>
-											<div class="wrap-price"><span class="product-price">$250.00</span></div>
+											<a href="#" class="product-name"><span>CHAMBRE À COUCHER ELYES</span></a>
+											<div class="wrap-price"><span class="product-price"> 1250 TND </span></div>
 										</div>
 									</div>
 
@@ -205,15 +205,15 @@
 												<figure><img src="{{ asset ('assets/images/categories-index/Cuisine/cuisine1.png') }}" width="800" height="800" alt="cuisine"></figure>
 											</a>
 											<div class="group-flash">
-												<span class="flash-item bestseller-label">Bestseller</span>
+											<span class="flash-item new-label">Nouveau</span>
 											</div>
 											<div class="wrap-btn">
-												<a href="#" class="function-link">quick view</a>
+												<a href="#" class="function-link">Vue Rapide</a>
 											</div>
 										</div>
 										<div class="product-info">
-											<a href="#" class="product-name"><span>Radiant-360 R6 Wireless Omnidirectional Speaker [White]</span></a>
-											<div class="wrap-price"><span class="product-price">$250.00</span></div>
+											<a href="#" class="product-name"><span> MEUBLE CUISINE COMPLETE MDF </span></a>
+											<div class="wrap-price"><span class="product-price"> 3800 TND  </span></div>
 										</div>
 									</div>
 
@@ -223,15 +223,15 @@
 												<figure><img src="{{ asset ('assets/images/categories-index/Cuisine/cuisine2.png') }}" width="800" height="800" alt="cuisine"></figure>
 											</a>
 											<div class="group-flash">
-												<span class="flash-item bestseller-label">Bestseller</span>
+												<span class="flash-item sale-label">Soldé</span>
 											</div>
 											<div class="wrap-btn">
-												<a href="#" class="function-link">quick view</a>
+												<a href="#" class="function-link">Vue Rapide</a>
 											</div>
 										</div>
 										<div class="product-info">
-											<a href="#" class="product-name"><span>Radiant-360 R6 Wireless Omnidirectional Speaker [White]</span></a>
-											<div class="wrap-price"><ins><p class="product-price">$168.00</p></ins> <del><p class="product-price">$250.00</p></del></div>
+											<a href="#" class="product-name"><span> BUFFET CUISINE MDF NOIR</span></a>
+											<div class="wrap-price"><ins><p class="product-price"> 1850 TND  </p></ins> <del><p class="product-price"> 1990 TND</p></del></div>
 										</div>
 									</div>
 
@@ -244,12 +244,12 @@
 												<span class="flash-item bestseller-label">Bestseller</span>
 											</div>
 											<div class="wrap-btn">
-												<a href="#" class="function-link">quick view</a>
+												<a href="#" class="function-link">Vue Rapide</a>
 											</div>
 										</div>
 										<div class="product-info">
-											<a href="#" class="product-name"><span>Radiant-360 R6 Wireless Omnidirectional Speaker [White]</span></a>
-											<div class="wrap-price"><span class="product-price">$250.00</span></div>
+											<a href="#" class="product-name"><span>ULTRA CUISINE MDF ROUGE MAT</span></a>
+											<div class="wrap-price"><span class="product-price">3500 TND </span></div>
 										</div>
 									</div>
 
@@ -259,15 +259,15 @@
 												<figure><img src="{{ asset ('assets/images/categories-index/Cuisine/cuisine4.png') }}" width="800" height="800" alt="cuisine"></figure>
 											</a>
 											<div class="group-flash">
-												<span class="flash-item bestseller-label">Bestseller</span>
+												<span class="flash-item sale-label">Soldé</span>
 											</div>
 											<div class="wrap-btn">
-												<a href="#" class="function-link">quic view</a>
+												<a href="#" class="function-link">Vue Rapide</a>
 											</div>
 										</div>
 										<div class="product-info">
-											<a href="#" class="product-name"><span>Radiant-360 R6 Wireless Omnidirectional Speaker [White]</span></a>
-											<div class="wrap-price"><ins><p class="product-price">$168.00</p></ins> <del><p class="product-price">$250.00</p></del></div>
+											<a href="#" class="product-name"><span>BUFFET CUISINE MDF BLANC</span></a>
+											<div class="wrap-price"><ins><p class="product-price"> 1850 TND  </p></ins> <del><p class="product-price"> 1990 TND</p></del></div>
 										</div>
 									</div>
 
@@ -280,12 +280,12 @@
 												<span class="flash-item bestseller-label">Bestseller</span>
 											</div>
 											<div class="wrap-btn">
-												<a href="#" class="function-link">quick view</a>
+												<a href="#" class="function-link">Vue Rapide</a>
 											</div>
 										</div>
 										<div class="product-info">
-											<a href="#" class="product-name"><span>Radiant-360 R6 Wireless Omnidirectional Speaker [White]</span></a>
-											<div class="wrap-price"><span class="product-price">$250.00</span></div>
+											<a href="#" class="product-name"><span> MEUBLE CUISINE COIN MDF  </span></a>
+											<div class="wrap-price"><span class="product-price"> 2350 TND </span></div>
 										</div>
 									</div>
 
@@ -298,12 +298,12 @@
 												<span class="flash-item bestseller-label">Bestseller</span>
 											</div>
 											<div class="wrap-btn">
-												<a href="#" class="function-link">quick view</a>
+												<a href="#" class="function-link">Vue Rapide</a>
 											</div>
 										</div>
 										<div class="product-info">
-											<a href="#" class="product-name"><span>Radiant-360 R6 Wireless Omnidirectional Speaker [White]</span></a>
-											<div class="wrap-price"><ins><p class="product-price">$168.00</p></ins> <del><p class="product-price">$250.00</p></del></div>
+											<a href="#" class="product-name"><span> MEUBLE CUISINE COIN MPF </span></a>
+											<div class="wrap-price"><ins><p class="product-price"> 2350 TND </p></ins> <del><p class="product-price">$250.00</p></del></div>
 										</div>
 									</div>
 
@@ -322,15 +322,15 @@
 												<figure><img src="{{ asset ('assets/images/categories-index/Salon/salon1.png') }}" width="800" height="800" alt="salon"></figure>
 											</a>
 											<div class="group-flash">
-												<span class="flash-item new-label">new</span>
+												<span class="flash-item new-label">Nouveau</span>
 											</div>
 											<div class="wrap-btn">
-												<a href="#" class="function-link">quick view</a>
+												<a href="#" class="function-link">Vue Rapide</a>
 											</div>
 										</div>
 										<div class="product-info">
-											<a href="#" class="product-name"><span>Radiant-360 R6 Wireless Omnidirectional Speaker [White]</span></a>
-											<div class="wrap-price"><span class="product-price">$250.00</span></div>
+											<a href="#" class="product-name"><span>SALON  AZUR COIN </span></a>
+											<div class="wrap-price"><span class="product-price"> 1880 TND</span></div>
 										</div>
 									</div>
 
@@ -340,16 +340,16 @@
 												<figure><img src="{{ asset ('assets/images/categories-index/Salon/salon2.png') }}" width="800" height="800" alt="salon"></figure>
 											</a>
 											<div class="group-flash">
-												<span class="flash-item new-label">new</span>
-												<span class="flash-item sale-label">sale</span>
+												
+												<span class="flash-item sale-label">Soldé</span>
 											</div>
 											<div class="wrap-btn">
-												<a href="#" class="function-link">quick view</a>
+												<a href="#" class="function-link">Vue Rapide </a>
 											</div>
 										</div>
 										<div class="product-info">
-											<a href="#" class="product-name"><span>Radiant-360 R6 Wireless Omnidirectional Speaker [White]</span></a>
-											<div class="wrap-price"><ins><p class="product-price">$168.00</p></ins> <del><p class="product-price">$250.00</p></del></div>
+											<a href="#" class="product-name"><span> SALON CAVALLI</span></a>
+											<div class="wrap-price"><ins><p class="product-price">3150 TND </p></ins> <del><p class="product-price">3800 TND </p></del></div>
 										</div>
 									</div>
 
@@ -359,15 +359,15 @@
 												<figure><img src="{{ asset ('assets/images/categories-index/Salon/salon3.png') }}" width="800" height="800" alt="salon"></figure>
 											</a>
 											<div class="group-flash">
-												<span class="flash-item new-label">new</span>
+												<span class="flash-item new-label">Nouveau </span>
 											</div>
 											<div class="wrap-btn">
-												<a href="#" class="function-link">quick view</a>
+												<a href="#" class="function-link">Vue Rapide </a>
 											</div>
 										</div>
 										<div class="product-info">
-											<a href="#" class="product-name"><span>Radiant-360 R6 Wireless Omnidirectional Speaker [White]</span></a>
-											<div class="wrap-price"><span class="product-price">$250.00</span></div>
+											<a href="#" class="product-name"><span> FAUTEUIL LOFT CAPITONNE</span></a>
+											<div class="wrap-price"><span class="product-price"> 600 TND</span></div>
 										</div>
 									</div>
 
@@ -377,16 +377,15 @@
 												<figure><img src="{{ asset ('assets/images/categories-index/Salon/salon4.png') }}" width="800" height="800" alt="salon"></figure>
 											</a>
 											<div class="group-flash">
-												<span class="flash-item new-label">new</span>
-												<span class="flash-item sale-label">sale</span>
+												<span class="flash-item sale-label">soldé</span>
 											</div>
 											<div class="wrap-btn">
-												<a href="#" class="function-link">quick view</a>
+												<a href="#" class="function-link">Vue Rapide</a>
 											</div>
 										</div>
 										<div class="product-info">
-											<a href="#" class="product-name"><span>Radiant-360 R6 Wireless Omnidirectional Speaker [White]</span></a>
-											<div class="wrap-price"><ins><p class="product-price">$168.00</p></ins> <del><p class="product-price">$250.00</p></del></div>
+											<a href="#" class="product-name"><span>MEUBLE D'ENTREE AZUR</span></a>
+											<div class="wrap-price"><ins><p class="product-price">620 TND</p></ins> <del><p class="product-price"> 870 TND </p></del></div>
 										</div>
 									</div>
 
@@ -396,15 +395,15 @@
 												<figure><img src="{{ asset ('assets/images/categories-index/Salon/salon5.png') }}" width="800" height="800" alt="salon"></figure>
 											</a>
 											<div class="group-flash">
-												<span class="flash-item new-label">new</span>
+												<span class="flash-item new-label">Nouveau</span>
 											</div>
 											<div class="wrap-btn">
-												<a href="#" class="function-link">quick view</a>
+												<a href="#" class="function-link">Vue Rapide</a>
 											</div>
 										</div>
 										<div class="product-info">
-											<a href="#" class="product-name"><span>Radiant-360 R6 Wireless Omnidirectional Speaker [White]</span></a>
-											<div class="wrap-price"><span class="product-price">$250.00</span></div>
+											<a href="#" class="product-name"><span> SALON AZZARO COIN </span></a>
+											<div class="wrap-price"><span class="product-price"> 1999 TND </span></div>
 										</div>
 									</div>
 
@@ -414,16 +413,15 @@
 												<figure><img src="{{ asset ('assets/images/categories-index/Salon/salon6.png') }}" width="800" height="800" alt="salon"></figure>
 											</a>
 											<div class="group-flash">
-												<span class="flash-item new-label">new</span>
-												<span class="flash-item sale-label">sale</span>
+												<span class="flash-item bestseller-label">Bestseller</span>
 											</div>
 											<div class="wrap-btn">
-												<a href="#" class="function-link">quick view</a>
+												<a href="#" class="function-link">Vue Rapide</a>
 											</div>
 										</div>
 										<div class="product-info">
-											<a href="#" class="product-name"><span>Radiant-360 R6 Wireless Omnidirectional Speaker [White]</span></a>
-											<div class="wrap-price"><ins><p class="product-price">$168.00</p></ins> <del><p class="product-price">$250.00</p></del></div>
+											<a href="#" class="product-name"><span> SALON FENDI COIN</span></a>
+											<div class="wrap-price"><span class="product-price"> 1100 TND </span></div>
 										</div>
 									</div>
 
@@ -440,20 +438,16 @@
 											<a href="detail.html" title="salle de bain">
 												<figure><img src="{{ asset ('assets/images/categories-index/salleDeBain/salleDeBain1.png') }}" width="800" height="800" alt="salle de bain"></figure>
 											</a>
+											<div class="group-flash">
+												<span class="flash-item new-label">nouveau</span>
+											</div>
 											<div class="wrap-btn">
-												<a href="#" class="function-link">quick view</a>
+												<a href="#" class="function-link">Vue Rapide</a>
 											</div>
 										</div>
 										<div class="product-info">
-											<a href="#" class="product-name"><span>Radiant-360 R6 Wireless Omnidirectional Speaker [White]</span></a>
-											<div class="product-rating">
-												<i class="fa fa-star" aria-hidden="true"></i>
-												<i class="fa fa-star" aria-hidden="true"></i>
-												<i class="fa fa-star" aria-hidden="true"></i>
-												<i class="fa fa-star" aria-hidden="true"></i>
-												<i class="fa fa-star" aria-hidden="true"></i>
-											</div>
-											<div class="wrap-price"><span class="product-price">$250.00</span></div>
+											<a href="#" class="product-name"><span> PLAN-VASQUE COMETE </span></a>
+										 		<div class="wrap-price"><span class="product-price"> 1500 TND </span></div>
 										</div>
 									</div>
 
@@ -463,21 +457,16 @@
 												<figure><img src="{{ asset ('assets/images/categories-index/salleDeBain/salleDeBain2.png') }}" width="800" height="800" alt="salle de bain"></figure>
 											</a>
 											<div class="group-flash">
-												<span class="flash-item sale-label">sale</span>
+												<span class="flash-item sale-label">Soldé</span>
 											</div>
 											<div class="wrap-btn">
-												<a href="#" class="function-link">quic view</a>
+												<a href="#" class="function-link">Vue Rapide </a>
 											</div>
 										</div>
 										<div class="product-info">
-											<a href="#" class="product-name"><span>Radiant-360 R6 Wireless Omnidirectional Speaker [White]</span></a>
-											<div class="product-rating">
-												<i class="fa fa-star" aria-hidden="true"></i>
-												<i class="fa fa-star" aria-hidden="true"></i>
-												<i class="fa fa-star" aria-hidden="true"></i>
-												<i class="fa fa-star" aria-hidden="true"></i>
-											</div>
-											<div class="wrap-price"><ins><p class="product-price">$168.00</p></ins> <del><p class="product-price">$250.00</p></del></div>
+											<a href="#" class="product-name"><span>  DOUBLE VASQUE EN BOIS</span></a>
+										
+											<div class="wrap-price"><ins><p class="product-price">1620 TND</p></ins> <del><p class="product-price"> 1870 TND </p></del></div>
 										</div>
 									</div>
 
@@ -487,21 +476,17 @@
 												<figure><img src="{{ asset ('assets/images/categories-index/salleDeBain/salleDeBain3.png') }}" width="800" height="800" alt="salle de bain"></figure>
 											</a>
 											<div class="group-flash">
-												<span class="flash-item new-label">new</span>
-												<span class="flash-item sale-label">sale</span>
+									
+											<span class="flash-item bestseller-label">Bestseller</span>
 											</div>
 											<div class="wrap-btn">
-												<a href="#" class="function-link">quic view</a>
+												<a href="#" class="function-link">Vue Rapide </a>
 											</div>
 										</div>
 										<div class="product-info">
-											<a href="#" class="product-name"><span>Radiant-360 R6 Wireless Omnidirectional Speaker [White]</span></a>
-											<div class="product-rating">
-												<i class="fa fa-star" aria-hidden="true"></i>
-												<i class="fa fa-star" aria-hidden="true"></i>
-												<i class="fa fa-star" aria-hidden="true"></i>
-											</div>
-											<div class="wrap-price"><span class="product-price">$250.00</span></div>
+											<a href="#" class="product-name"><span>  DOUBLE VASQUE ROUGE BRIQUE </span></a>
+										  
+											<div class="wrap-price"><span class="product-price">1950 TND </span></div>
 										</div>
 									</div>
 
@@ -514,18 +499,13 @@
 												<span class="flash-item bestseller-label">Bestseller</span>
 											</div>
 											<div class="wrap-btn">
-												<a href="#" class="function-link">quic view</a>
+												<a href="#" class="function-link">Vue Rapide</a>
 											</div>
 										</div>
 										<div class="product-info">
-											<a href="#" class="product-name"><span>Radiant-360 R6 Wireless Omnidirectional Speaker [White]</span></a>
-											<div class="product-rating">
-												<i class="fa fa-star" aria-hidden="true"></i>
-												<i class="fa fa-star" aria-hidden="true"></i>
-												<i class="fa fa-star" aria-hidden="true"></i>
-												<i class="fa fa-star" aria-hidden="true"></i>
-											</div>
-											<div class="wrap-price"><ins><p class="product-price">$168.00</p></ins> <del><p class="product-price">$250.00</p></del></div>
+											<a href="#" class="product-name"><span>SALLE DE BAIN PALMA</span></a>
+											 
+											<div class="wrap-price"><span class="product-price"> 1680 TND </span> </div>
 										</div>
 									</div>
 
@@ -534,20 +514,18 @@
 											<a href="detail.html" title="salle de bain">
 												<figure><img src="{{ asset ('assets/images/categories-index/salleDeBain/salleDeBain5.png') }}" width="800" height="800" alt="salle de bain"></figure>
 											</a>
+											<div class="group-flash">
+									
+												<span class="flash-item sale-label">Soldé</span>
+											</div>
 											<div class="wrap-btn">
-												<a href="#" class="function-link">quic view</a>
+												<a href="#" class="function-link">Vue Rapide </a>
 											</div>
 										</div>
 										<div class="product-info">
-											<a href="#" class="product-name"><span>Radiant-360 R6 Wireless Omnidirectional Speaker [White]</span></a>
-											<div class="product-rating">
-												<i class="fa fa-star" aria-hidden="true"></i>
-												<i class="fa fa-star" aria-hidden="true"></i>
-												<i class="fa fa-star" aria-hidden="true"></i>
-												<i class="fa fa-star" aria-hidden="true"></i>
-												<i class="fa fa-star" aria-hidden="true"></i>
-											</div>
-											<div class="wrap-price"><span class="product-price">$250.00</span></div>
+											<a href="#" class="product-name"><span> SALLE DE BAIN 5 PIECES </span></a>
+										 
+											<div class="wrap-price"><ins><p class="product-price"> 1000 TND  </p></ins> <del><p class="product-price"> 1200 TND</p></del></div>
 										</div>
 									</div>
 
@@ -557,21 +535,16 @@
 												<figure><img src="{{ asset ('assets/images/categories-index/salleDeBain/salleDeBain6.png') }}" width="800" height="800" alt="salle de bain"></figure>
 											</a>
 											<div class="group-flash">
-												<span class="flash-item sale-label">sale</span>
+												<span class="flash-item sale-label">Soldé</span>
 											</div>
 											<div class="wrap-btn">
-												<a href="#" class="function-link">quic view</a>
+												<a href="#" class="function-link">Vue Rapide </a>
 											</div>
 										</div>
 										<div class="product-info">
-											<a href="#" class="product-name"><span>Radiant-360 R6 Wireless Omnidirectional Speaker [White]</span></a>
-											<div class="product-rating">
-												<i class="fa fa-star" aria-hidden="true"></i>
-												<i class="fa fa-star" aria-hidden="true"></i>
-												<i class="fa fa-star" aria-hidden="true"></i>
-												<i class="fa fa-star" aria-hidden="true"></i>
-											</div>
-											<div class="wrap-price"><ins><p class="product-price">$168.00</p></ins> <del><p class="product-price">$250.00</p></del></div>
+											<a href="#" class="product-name"><span>SALLE DE BAIN EZABELLE</span></a>
+								
+											<div class="wrap-price"><ins><p class="product-price">1200 TND</p></ins> <del><p class="product-price">2000 TND </p></del></div>
 										</div>
 									</div>
 

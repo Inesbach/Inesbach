@@ -3,12 +3,13 @@
 namespace App\Http\Livewire;
 
 use Livewire\Component;
+use App\Models\Product;
 
 class HomeComponent extends Component
 {
     public function render()
     {
-      
-        return view('livewire.home-component')->layout('layouts.base');
+        $products = Product::all();
+        return view('livewire.home-component', ['products'=>$products])->layout('layouts.base');
     }
 }

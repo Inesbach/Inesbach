@@ -97,32 +97,7 @@
 							<a href="/" style="font-size: 20px;font-weight: bold ;text-decoration:none;color: black">MyHomeDeco</a>
 						</div>
 
-						<div class="wrap-search center-section">
-							<div class="wrap-search-form">
-								<form action="#" id="form-search-top" name="form-search-top">
-									<input type="text" name="search" value="" placeholder="Rechercher">
-									<button form="form-search-top" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
-									<div class="wrap-list-cate">
-										<input type="hidden" name="product-cate" value="0" id="product-cate">
-										<a href="#" class="link-control">Categories</a>
-										<ul class="list-cate">
-											<li class="level-1">-MEUBLES SALON</li>
-											<li class="level-2">Meubles TV</li>
-											<li class="level-2">Canapé & Fauteuil</li>
-											<li class="level-2">Meubles d'entrée</li>
-											<li class="level-1">-MEUBLES CHAMBRE</li>
-											<li class="level-2">Chambre Couple</li>
-											<li class="level-2">Chambre Enfant</li>
-											<li class="level-2">Chambre Bébé</li>
-											<li class="level-1">-MEUBLES CUISINE </li>
-											<li class="level-2">Equipements cuisine</li>
-											<li class="level-1">-MEUBLES SALE DE BAIN</li>
-											<li class="level-2">Meubles Sale de bain</li>
-										</ul>
-									</div>
-								</form>
-							</div>
-						</div>
+						@livewire('header-search-component')
 
 						<div class="wrap-icon right-section">
 							<div class="wrap-icon-section wishlist">
@@ -137,7 +112,9 @@
 								<a href="#" class="link-direction">
 									<i class="fa fa-shopping-basket" aria-hidden="true"></i>
 									<div class="left-info">
-										<span class="index">4 produits</span>
+									@if(Cart::count() > 0)
+										<span class="index">{{Cart::count()}} produit(s)</span>
+									@endif
 										<span class="title">Panier</span>
 									</div>
 								</a>
@@ -162,7 +139,7 @@
 									<a href="/" class="link-term mercado-item-title"><i class="fa fa-home" aria-hidden="true"></i></a>
 								</li>
 								<li class="menu-item">
-									<a href="presentation.html" class="link-term mercado-item-title">Présentation</a>
+									<a href="/presentation" class="link-term mercado-item-title">Présentation</a>
 								</li>
 								<li class="menu-item">
 									<a href="/shop" class="link-term mercado-item-title">Produits</a>
@@ -174,7 +151,7 @@
 									<a href="/checkout" class="link-term mercado-item-title">Checkout</a>
 								</li>
 								<li class="menu-item">
-									<a href="contact.html" class="link-term mercado-item-title">Contact</a>
+									<a href="#" class="link-term mercado-item-title">Contact</a>
 								</li>																	
 							</ul>
 						</div>
@@ -306,10 +283,10 @@
 									<div class="item-content">
 										<div class="wrap-vertical-nav">
 											<ul>
-												<li class="menu-item"><a href="presentation.html" class="link-term">Qui sommes nous?</a></li>
-												<li class="menu-item"><a href="compte.html" class="link-term">Inscrivez-vous!</a></li>
-												<li class="menu-item"><a href="connexion.html" class="link-term">Espace client </a></li>
-												<li class="menu-item"><a href="contact.html" class="link-term">Contactez-nous!</a></li>
+												<li class="menu-item"><a href="/presentation" class="link-term">Qui sommes nous?</a></li>
+												<li class="menu-item"><a href="{{ route('register') }}" class="link-term">Inscrivez-vous!</a></li>
+												<li class="menu-item"><a href="{{ route('login') }}" class="link-term">Espace client </a></li>
+												<li class="menu-item"><a href="#" class="link-term">Contactez-nous!</a></li>
 												<li class="menu-item"><a href="/shop" class="link-term">Nos Produits</a></li>
                                               
 											</ul>
@@ -322,10 +299,10 @@
 										<div class="wrap-vertical-nav">
 											<ul>
 												<li class="menu-item"><a href="/" class="link-term">Accueil</a></li>
-												<li class="menu-item"><a href="about-us.html" class="link-term">Présentation</a></li>
+												<li class="menu-item"><a href="/preentation" class="link-term">Présentation</a></li>
 												<li class="menu-item"><a href="/shop" class="link-term">Produits</a></li>
 												<li class="menu-item"><a href="/cart" class="link-term">Panier</a></li>
-                                                <li class="menu-item"><a href="contact-us.html" class="link-term">Contact</a></li>
+                                                <li class="menu-item"><a href="#" class="link-term">Contact</a></li>
 											</ul>
 										</div>
 									</div>
