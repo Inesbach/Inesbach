@@ -2,9 +2,10 @@
 
 namespace App\Http\Livewire;
 
+use Livewire\withPagination;
 use App\Models\Product;
 use Livewire\Component;
-use Livewire\withPagination;
+
 use Cart;
 use App\Models\Category;
 
