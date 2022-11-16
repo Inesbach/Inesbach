@@ -4,7 +4,7 @@ namespace App\Http\Livewire;
 
 use App\Models\Product;
 use Livewire\Component;
-use Livewire\withPagination;
+use Livewire\WithPagination;
 use Cart;
 use App\Models\Category;
 
@@ -31,7 +31,7 @@ class SearchComponent extends Component
         return redirect()->route('product.cart');
 
     }
-    use withPagination;
+    use WithPagination;
     public function render()
     {
         if($this->sorting=='date')

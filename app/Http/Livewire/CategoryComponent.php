@@ -4,7 +4,7 @@ namespace App\Http\Livewire;
 
 use App\Models\Product;
 use Livewire\Component;
-use Livewire\withPagination;
+use Livewire\WithPagination;
 use Cart;
 use App\Models\Category;
 
@@ -28,7 +28,7 @@ class CategoryComponent extends Component
         return redirect()->route('product.cart');
 
     }
-    use withPagination;
+    use WithPagination;
     public function render()
     {
         $category = Category::where('slug',$this->category_slug)->first();
