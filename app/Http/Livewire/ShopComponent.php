@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Livewire;
-
+/*ines test*/
 use Livewire\WithPagination;
 use App\Models\Product;
 use Livewire\Component;
